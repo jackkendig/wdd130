@@ -404,7 +404,7 @@ button {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, #rivers-hero {
         display: block;
         height: auto;
     }
@@ -415,16 +415,16 @@ button {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #rivers-hero {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #rivers-hero-msg {
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg h4, #rivers-hero-msg h4 {
         display: none;
     }
-    #hero-msg h1 {
+    #hero-msg h1, #rivers-hero-msg h1 {
         color: #6f7364;
     }
     .home-title {
@@ -444,5 +444,30 @@ button {
     }
     footer {
         margin-top: 25px;
+    }
+
+    #river1, #river3 {
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+    }
+
+    #river2 {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 35px;
+    }
+
+    .river-msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .river-img {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
     }
 }
